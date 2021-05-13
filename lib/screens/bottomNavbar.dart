@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_feed/favstab/fav_tab.dart';
 import 'package:news_feed/newstab/news_tab.dart';
+import 'package:news_feed/shared_preference.dart';
 
 class BottomNavbar extends StatefulWidget {
   @override
