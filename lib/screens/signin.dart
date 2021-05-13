@@ -164,7 +164,7 @@ class _SignInState extends State<SignIn> {
                                             BorderRadius.circular(13)),
                                     child: Padding(
                                       padding: const EdgeInsets.only(
-                                          left: 15, bottom: 8),
+                                          left: 15, bottom: 8, top: 5),
                                       child: TextFormField(
                                         style: TextStyle(color: Colors.white),
                                         validator: (value) =>
@@ -195,7 +195,7 @@ class _SignInState extends State<SignIn> {
                                             BorderRadius.circular(13)),
                                     child: Padding(
                                       padding: const EdgeInsets.only(
-                                          left: 15, bottom: 8),
+                                          left: 15, bottom: 8, top: 5),
                                       child: TextFormField(
                                         obscureText: true,
                                         style: TextStyle(color: Colors.white),
@@ -275,8 +275,8 @@ class _SignInState extends State<SignIn> {
                                                 4,
                                         child: Divider(
                                           color: Colors.black,
-                                          height: 10,
-                                          thickness: .6,
+                                          height: 5,
+                                          thickness: .2,
                                           indent: 15,
                                           endIndent: 0,
                                         ),
@@ -287,15 +287,19 @@ class _SignInState extends State<SignIn> {
                                                   .size
                                                   .width /
                                               2.8,
-                                          child: Text("or sign up with")),
+                                          child: Text(
+                                            "Or Sign In With",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold),
+                                          )),
                                       Container(
                                         width:
                                             MediaQuery.of(context).size.width /
                                                 4,
                                         child: Divider(
                                           color: Colors.black,
-                                          height: 10,
-                                          thickness: .6,
+                                          height: 5,
+                                          thickness: .2,
                                           indent: 0,
                                           endIndent: 12,
                                         ),
@@ -378,6 +382,7 @@ Widget bluebutton({
       style: TextStyle(
         color: Colors.white,
         fontSize: 16,
+        fontWeight: FontWeight.bold,
       ),
     ),
   );
