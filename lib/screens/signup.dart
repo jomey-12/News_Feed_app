@@ -341,11 +341,12 @@ class _SignUpState extends State<SignUp> {
                                               color: Colors.yellow[900],
                                             )),
                                         onTap: () {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) => SignIn()),
-                                          );
+                                          Navigator.pushReplacement(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder:
+                                                      (BuildContext context) =>
+                                                          SignIn()));
                                         },
                                       )
                                     ],
