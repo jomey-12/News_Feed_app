@@ -45,9 +45,7 @@ class AuthProvider with ChangeNotifier {
       final Map<String, dynamic> responseData = json.decode(response.body);
 
       var userData = responseData;
-      print("$userData + ..........");
       User authUser = User.fromJson(userData);
-
       UserPreferences().saveUser(authUser);
 
       _loggedInStatus = Status.LoggedIn;
